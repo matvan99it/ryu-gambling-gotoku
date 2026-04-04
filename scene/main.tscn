@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://t1ir6sro3ctf"]
+
+[ext_resource type="Script" uid="uid://cnvst2ko6ef1b" path="res://script/main.gd" id="1_itxqv"]
+
+[node name="Node2D" type="Node2D" unique_id=769952140]
+script = ExtResource("1_itxqv")
+
+[node name="dealerTotal" type="Label" parent="." unique_id=616979986]
+offset_left = 590.0
+offset_top = 87.0
+offset_right = 699.0
+offset_bottom = 188.0
+theme_override_constants/outline_size = 13
+theme_override_font_sizes/font_size = 72
+text = "00"
+
+[node name="playerTotal" type="Label" parent="." unique_id=1707091584]
+offset_left = 569.0
+offset_top = 466.0
+offset_right = 678.0
+offset_bottom = 567.0
+theme_override_constants/outline_size = 13
+theme_override_font_sizes/font_size = 72
+text = "00"
+
+[node name="dealerStartPos" type="Marker2D" parent="." unique_id=1402232871]
+position = Vector2(506, 136)
+
+[node name="playerStartPos" type="Marker2D" parent="." unique_id=57877640]
+position = Vector2(499, 518)

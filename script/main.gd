@@ -23,15 +23,27 @@ func _ready():
 	$dealerTotal.text = str(totale_dealer)
 	$playerTotal.text = str(totale_player)
 	
-	show_cards_grid()
+	show_cards("player")
+	show_cards("dealer")
 
-func show_cards_grid():
-	var x = start_position.x
-	var y = start_position.y
+func show_cards(subject: String):
+	var x
+	var y
+	var carte: Array[Card]
+	if subject == "player":
+		x = $playerStartPos.position.x
+		y = $playerStartPos.position.y
+		carte = mano_player
+	if subject == "dealer":
+		x = $dealerStartPos.position.x
+		y = $dealerStartPos.position.y
+		carte = mano_dealer
+	
 	var col_count = 0
+	print(carte)
 
 	# ciclo su tutte le carte del mazzo
-	for card_data in deck.carte:
+	for card_data in carte:
 		var node = card_scene.instantiate()
 		node.set_card(card_data, card_spritesheet)
 		node.is_face_up = true
@@ -43,15 +55,9 @@ func show_cards_grid():
 		x += spacing_x
 		col_count += 1
 
-		# se finisce la riga, vai a capo
-		if col_count >= cards_per_row:
-			col_count = 0
-			x = start_position.x
-			y += spacing_y
-
-	# aggiungi la carta coperta (retro) alla fine
-	var back_card_node = card_scene.instantiate()
-	back_card_node.set_card(deck.carte[0], card_spritesheet) # placeholder valido
-	back_card_node.is_face_up = false
-	back_card_node.position = Vector2(x, y)
-	add_child(back_card_node)
+	# # aggiungi la carta coperta (retro) alla fine
+	# var back_card_node = card_scene.instantiate()
+	# back_card_node.set_card(deck.carte[0], card_spritesheet) # placeholder valido
+	# back_card_node.is_face_up = false
+	# back_card_node.position = Vector2(x, y)
+	# add_child(back_card_node)

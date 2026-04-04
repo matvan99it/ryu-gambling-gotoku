@@ -1,0 +1,38 @@
+1️⃣ Obiettivo del gioco
+	Vinci se il totale delle carte della tua mano è più vicino a 21 rispetto al dealer senza superarlo.
+	Se superi 21 → sballi e perdi automaticamente.
+	Se il dealer supera 21 → dealer sballa, vinci.
+2️⃣ Valore delle carte
+	Carta		Valore in punti
+	2 → 10		Valore numerico
+	J, Q, K		10 punti
+	Asso (A)	1 o 11 (a scelta)
+	L’Asso è flessibile: vale 11 se non fa sballare, altrimenti vale 1.
+3️⃣ Inizio della partita
+	Il giocatore riceve 2 carte scoperte.
+	Il dealer riceve 2 carte, di solito una scoperta e una coperta (hole card).
+4️⃣ Azioni del giocatore
+Dopo aver ricevuto le prime 2 carte, puoi:
+
+	Hit (chiedere carta) → prendi un’altra carta.
+	Stand (stare) → non prendi altre carte e termini il turno.
+	Double Down (raddoppiare) → raddoppi la puntata e prendi solo una carta in più.
+	Split (dividere) → se le prime 2 carte sono uguali, puoi dividerle in 2 mani separate e giocarle singolarmente.
+
+	Nota: Split e Double Down dipendono dalle regole della casa.
+
+5️⃣ Turno del dealer
+	Dopo il turno del giocatore, il dealer scopre la carta coperta.
+	Regole standard:
+	Deve pescare carte finché il totale è < 17.
+	Deve stare se il totale è 17 o più (alcune varianti dicono “soft 17” → A+6 = 17, può pescare ancora).
+6️⃣ Vincere o perdere
+	Vinci se il totale della tua mano è più vicino a 21 del dealer senza sballare.
+	Perdi se superi 21 o se il dealer ha un totale maggiore senza sballare.
+	Pareggio (Push) se hai lo stesso totale del dealer → la puntata viene restituita.
+7️⃣ Blackjack naturale
+	Se le prime 2 carte sono Asso + 10/J/Q/K → blackjack naturale.
+	Vantaggi: di solito pagamento 3:2 sulla puntata iniziale, a meno che il dealer abbia anche lui un blackjack naturale.
+8️⃣ Alcune regole aggiuntive comuni
+	Assicurazione (Insurance): se la carta scoperta del dealer è un Asso, puoi puntare metà della puntata originale contro un eventuale blackjack del dealer.
+	Surrender: alcune versioni permettono di arrendersi e recuperare metà della puntata.

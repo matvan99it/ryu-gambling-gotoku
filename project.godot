@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Ryu Gambling Gotoku"
-run/main_scene="uid://t1ir6sro3ctf"
+run/main_scene="uid://baxlis8opn3pj"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://raisorse/icon.svg"
+
+[global_group]
+
+Persistent="oggetti per il salvataggio"
 
 [physics]
 

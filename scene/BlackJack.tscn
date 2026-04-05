@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://t1ir6sro3ctf"]
 
-[ext_resource type="Script" uid="uid://cnvst2ko6ef1b" path="res://script/main.gd" id="1_itxqv"]
+[ext_resource type="Script" uid="uid://cnvst2ko6ef1b" path="res://script/blackjack.gd" id="1_5rsf8"]
 
 [node name="Node2D" type="Node2D" unique_id=769952140]
-script = ExtResource("1_itxqv")
+script = ExtResource("1_5rsf8")
 
 [node name="dealerTotal" type="Label" parent="." unique_id=616979986]
 offset_left = 590.0

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://baxlis8opn3pj"]
+
+[ext_resource type="Script" uid="uid://cmnw2r01omr6u" path="res://script/main_menu.gd" id="1_nn17b"]
+
+[node name="MainMenu" type="Node2D" unique_id=816543958]
+script = ExtResource("1_nn17b")
+
+[node name="Label" type="Label" parent="." unique_id=255375452]
+offset_left = 272.0
+offset_top = 107.0
+offset_right = 475.0
+offset_bottom = 168.0
+text = "IL GAMBLING"
+
+[node name="Button" type="Button" parent="." unique_id=1925116637]
+offset_left = 263.0
+offset_top = 201.0
+offset_right = 371.0
+offset_bottom = 276.0
+text = "Blackjack"
+
+[node name="Money" type="Button" parent="." unique_id=156828975]
+offset_left = 746.06213
+offset_top = 86.81259
+offset_right = 826.0
+offset_bottom = 123.0
+text = "Guadagna Soldi $"
+
+[node name="money_tot" type="Label" parent="Money" unique_id=1065787567 groups=["Persistent"]]
+layout_mode = 0
+offset_left = 0.9378662
+offset_top = 37.18741
+offset_right = 303.93787
+offset_bottom = 110.18741
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Money" to="." method="_on_money_pressed"]

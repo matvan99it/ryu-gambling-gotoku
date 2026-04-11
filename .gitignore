@@ -1,17 +1,74 @@
+# =========================
 # Godot 4+ specific ignores
+# =========================
 .godot/
-/android/
+.android/
 .nomedia
 
-# Godot-specific ignores
+# Editor cache & temp files
 .import/
+.export/
 export.cfg
 export_credentials.cfg
 
-# Imported translations (automatically generated from CSV files)
+# Godot editor files
+.editor/
+*.godot
+
+# Imported assets (auto-generated)
+*.import
 *.translation
 
-# Mono-specific ignores
+# =========================
+# Mono / C# specific ignores
+# =========================
 .mono/
 data_*/
 mono_crash.*.json
+
+# C# build artifacts
+bin/
+obj/
+*.csproj.user
+*.sln
+
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# IDE / Editor files
+# =========================
+
+# VS Code
+.vscode/
+
+# JetBrains (Rider, IntelliJ)
+.idea/
+*.iml
+
+# Visual Studio
+.vs/
+
+# =========================
+# Exported builds
+# =========================
+/build/
+/dist/
+/exports/
+
+# =========================
+# Logs & temp
+# =========================
+*.log
+*.tmp
+*.bak
+
+# =========================
+# Backup files
+# =========================
+*~
+*.swp

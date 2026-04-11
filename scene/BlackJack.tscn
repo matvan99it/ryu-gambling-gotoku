@@ -1,30 +1,48 @@
 [gd_scene format=3 uid="uid://t1ir6sro3ctf"]
 
 [ext_resource type="Script" uid="uid://cnvst2ko6ef1b" path="res://script/blackjack.gd" id="1_5rsf8"]
+[ext_resource type="Texture2D" uid="uid://3gc7u5e0g6e7" path="res://raisorse/blackjack-table.jpg" id="2_5oi6q"]
 
-[node name="Node2D" type="Node2D" unique_id=769952140]
+[node name="Node2D" type="Control" unique_id=1895536043]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_5rsf8")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=270753857]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_5oi6q")
+
 [node name="dealerTotal" type="Label" parent="." unique_id=616979986]
-offset_left = 590.0
-offset_top = 87.0
-offset_right = 699.0
-offset_bottom = 188.0
+layout_mode = 0
+offset_left = 396.0
+offset_top = 40.0
+offset_right = 505.0
+offset_bottom = 141.0
 theme_override_constants/outline_size = 13
 theme_override_font_sizes/font_size = 72
 text = "00"
 
 [node name="playerTotal" type="Label" parent="." unique_id=1707091584]
-offset_left = 569.0
-offset_top = 466.0
-offset_right = 678.0
-offset_bottom = 567.0
+layout_mode = 0
+offset_left = 675.0
+offset_top = 439.0
+offset_right = 784.0
+offset_bottom = 540.0
 theme_override_constants/outline_size = 13
 theme_override_font_sizes/font_size = 72
 text = "00"
 
 [node name="dealerStartPos" type="Marker2D" parent="." unique_id=1402232871]
-position = Vector2(506, 136)
+position = Vector2(589, 101)
 
 [node name="playerStartPos" type="Marker2D" parent="." unique_id=57877640]
-position = Vector2(499, 518)
+position = Vector2(573, 510)

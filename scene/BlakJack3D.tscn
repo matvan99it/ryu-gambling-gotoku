@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dhmvjwm1qsgt"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_j4lcf"]
+lightmap_size_hint = Vector2i(12, 7)
+size = Vector2(0.655, 0.33)
+
+[node name="Node3D" type="Node3D" unique_id=1316020577]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1851641213]
+transform = Transform3D(17.296474, 0, 0, 0, 0.99637365, 0, 0, 0, 18.559717, 0, 0, 0)
+mesh = SubResource("PlaneMesh_j4lcf")

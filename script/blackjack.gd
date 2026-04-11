@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 var deck: Mazzo
 var card_scene = preload("res://scene/CardScene.tscn")          # scena della carta
@@ -9,10 +9,14 @@ var mano_dealer: Array[Card] = []
 var totale_player := 0
 var totale_dealer := 0
 
-var start_position := Vector2(50, 50)  # punto iniziale della griglia
-var spacing_x := 65                     # distanza orizzontale tra le carte
-var spacing_y := 100                    # distanza verticale tra le righe
-var cards_per_row := 13                 # numero di carte per riga (Asso → Re)
+# Testing spqn carte
+# var start_position := Vector2(50, 50)  # punto iniziale della griglia
+# var spacing_x := 65                     # distanza orizzontale tra le carte
+# var spacing_y := 100                    # distanza verticale tra le righe
+# var cards_per_row := 13                 # numero di carte per riga (Asso → Re)
+
+@export var offset_y: int = 18
+@export var offset_x: int = 12
 
 func _ready():
 	deck = Mazzo.new()
@@ -38,6 +42,9 @@ func show_cards(subject: String):
 		x = $dealerStartPos.position.x
 		y = $dealerStartPos.position.y
 		carte = mano_dealer
+		offset_x *= -1
+		offset_y *= -1
+		
 	
 	var col_count = 0
 	print(carte)
@@ -52,8 +59,9 @@ func show_cards(subject: String):
 
 
 		# sposta alla prossima colonna
-		x += spacing_x
-		col_count += 1
+		# sposta leggermente verso il basso
+		y -= offset_y
+		x += offset_x
 
 	# # aggiungi la carta coperta (retro) alla fine
 	# var back_card_node = card_scene.instantiate()

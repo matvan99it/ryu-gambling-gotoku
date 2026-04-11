@@ -11,7 +11,7 @@ func _ready():
 	$Sprite2D.texture = sprite_sheet
 	$Sprite2D.region_enabled = true
 	$Sprite2D.region_rect = Rect2(Vector2.ZERO, Vector2(card_width, card_height))
-	$Sprite2D.centered = false
+	$Sprite2D.centered = true
 	$Area2D.connect("input_event", Callable(self, "_on_card_clicked"))
 	update_view()
 

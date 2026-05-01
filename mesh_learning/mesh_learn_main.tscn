@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c45dr324bm8uw"]
+
+[ext_resource type="ArrayMesh" uid="uid://ccmx1ln3s3q0a" path="res://mesh_learning/asset/chapter_01/custom_mesh/custom_quad.obj" id="1_crkki"]
+
+[node name="Node3D" type="Node3D" unique_id=250922692]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1514940615]
+mesh = ExtResource("1_crkki")

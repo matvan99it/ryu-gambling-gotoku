@@ -1,0 +1,26 @@
+g default
+
+# Vertici per indicare i lati in senso orario dal Basso-Sx
+# x    y    z
+v -0.5 -0.5 0.0		#1.
+v -0.5  0.5 0.0   	#2.
+v  0.5  0.5 0.0		#3.
+v  0.5 -0.5 0.0		#4.
+
+# UV Coordinates: per proiettare le texture sull'oggetto.
+vt 0.0 0.0		#1.
+vt 0.0 1.0		#2.
+vt 1.0 1.0		#3.
+vt 1.0 0.0		#4.
+
+# Normal maps: vettori che indicano l'orientazione della superfice, essenziali per calcolare le luci.
+#  x    y    z.
+vn 0.0  0.0  1.0.
+vn 0.0  0.0  1.0.
+vn 0.0  0.0  1.0.
+vn 0.0  0.0  1.0.
+
+s off # normal smoothing off.
+g quad_mesh.
+f 4/4/4 3/3/3 2/2/2 1/1/1
+# f=faccia e le combo [4/4/4] indica che la faccia 1 usa il vertice 4, coordinata uv 4 e la normale 4

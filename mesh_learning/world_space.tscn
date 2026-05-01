@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cqx2w0x7dltgj"]
+
+[ext_resource type="ArrayMesh" uid="uid://72828lrbc1on" path="res://mesh_learning/asset/chapter_01/spaces/meshes/tree.tres" id="2_d3qt1"]
+[ext_resource type="Material" uid="uid://ydatoq6ejrwv" path="res://mesh_learning/asset/chapter_01/spaces/materials/world_space.tres" id="2_h4d3q"]
+
+[node name="Node3D" type="Node3D" unique_id=1992152532]
+
+[node name="Tree" type="MeshInstance3D" parent="." unique_id=845450222]
+mesh = ExtResource("2_d3qt1")
+surface_material_override/0 = ExtResource("2_h4d3q")
